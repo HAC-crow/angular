@@ -1,0 +1,53 @@
+<h2>首页目前需要一个菜单栏还要下边的内容实现页</h2>
+<hr>
+<nav class="hl_nav">
+    <ul class="nav_list">
+        <li class="highlight active">
+            <a class="nav_head" href="#">
+                <span>网站首页</span>
+            </a>
+        </li>
+        <li class="highlight">
+            <a class="nav_head">
+                <span>在线下载</span>
+            </a>
+            <div *ngFor="let item of menu">
+                <a href="#" class="item">{{item.value}}</a>
+            </div>
+            
+        </li>
+        <li class="highlight">
+            <a class="nav_head" href="#">
+                <span>成功案例</span>
+            </a>
+            <a href="#" class="item">二级导航1</a>
+        </li>
+        <li class="highlight">
+            <a class="nav_head" href="#">
+                <span>新闻动态</span>
+            </a>
+            <a href="#" class="item">二级导航1</a>
+        </li>
+        <li class="highlight">
+            <a class="nav_head" href="#">
+                <span>与我联系</span>
+            </a>
+            <a href="#" class="item">二级导航1</a>
+        </li>
+        <li>
+            <a class="nav_head" href="#">
+                <span>关于我们</span>
+            </a>
+        </li>
+        <li class="right highlight">
+            <a class="nav_head" href="#">
+                <span>个人中心</span>
+            </a>
+            <a href="#" *ngIf="test" class="item">登录账号</a>
+            <a href="#" class="item">修改资料</a>
+            <a href="#" class="item">安全设置</a>
+            <a href="#" class="item">退出帐号</a>
+        </li>
+    </ul>
+    <div class="shade"></div>
+</nav>
