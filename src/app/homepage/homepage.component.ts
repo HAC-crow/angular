@@ -18,7 +18,13 @@ export class HomepageComponent implements OnInit {
     this.getmenu1();
   }
   getmenu1():void{
-    this.menuService.getmenu1().subscribe(menu=>this.menu=menu);
+    this.menuService.getmenu1().subscribe(
+      menu=>{
+        this.menu=menu;
+        console.log(this.menu);
+      }
+
+      );
   }
 
 }

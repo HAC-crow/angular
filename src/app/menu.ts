@@ -1,4 +1,5 @@
+import { menudetailed } from './menudetailed';
 export class menu {
-    id: number;
-    value: String;
+    name: String;
+    value:menudetailed;
   }
